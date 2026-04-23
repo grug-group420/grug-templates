@@ -1,44 +1,30 @@
-# 📝 grug-templates
+# 🪨 grug-templates
 
-> Starter templates with minimal setup. No config hell.
+Zero-dependency starter templates. Start simple. Ship fast.
 
 ## Templates
 
-### 🟨 JavaScript
+| Template | Language | Run |
+|----------|----------|-----|
+| `html/` | HTML | Open `index.html` in browser |
+| `js/` | JavaScript (Bun/Node) | `bun index.js` |
+| `ts/` | TypeScript | `npm run dev` |
+| `py/` | Python | `python3 main.py` |
+
+## Usage
+
+Copy any template folder and rename it:
+
 ```bash
-npx degit grug-group420/grug-templates/js my-project
+cp -r grug-templates/py/ my-new-project/
+cd my-new-project/
+python3 main.py
 ```
-
-### 🟦 TypeScript  
-```bash
-npx degit grug-group420/grug-templates/ts my-project
-```
-
-### 🌐 HTML
-```bash
-npx degit grug-group420/grug-templates/html my-site
-```
-
-## What's Inside
-
-Each template has:
-- Single entry file
-- Minimal package.json
-- README
-- .gitignore
-- No config files
-- No dependencies*
-
-*TypeScript has typescript as devDep. Grug accept this.
 
 ## Philosophy
 
-- No webpack
-- No babel
-- No eslint config
-- No prettier config
-- Just code
+- Zero dependencies where possible
+- One file when possible
+- Simple > clever
 
----
-
-Built with 🦴 by [grug-group420](https://github.com/grug-group420)
+🦴 grug say: "start simple. add only what hurt without."
